@@ -1,0 +1,76 @@
+# Este es un comentario
+var x = 20  # Declaración de variable
+imprimir x
+# Fin del programa
+
+
+# Ejemplo CORRECTO de bucle mientras
+# inicio de programa
+var contador = 5
+var suma = 0
+
+imprimir "Iniciando conteo:"
+
+mientras (contador > 0) {
+    suma = suma + contador  # Asignación correcta
+    imprimir "Contador: " + contador + ", Suma parcial: " + suma
+    contador = contador - 1  # Asignación correcta
+}
+
+imprimir "Suma total: " + suma
+# fin del programa 
+
+
+# Calculadora de Edad Avanzada
+#inicio de programa
+var edad = 18
+var nombre = "Juan"
+
+imprimir "Hola " + nombre + ", vamos a verificar tu edad:"
+
+si (edad >= 18) {
+    imprimir "¡Felicidades! Eres mayor de edad"
+    imprimir "Puedes:"
+    imprimir "- Votar"
+    imprimir "- Obtener tu licencia de conducir"
+} sino {
+    imprimir "Aun eres menor de edad"
+    var anios_restantes = 18 - edad
+    imprimir "Te faltan " + anios_restantes + " anios para ser mayor de edad"
+    
+    # Contador de años
+    var contador = 1
+    imprimir "\nCuenta regresiva:"
+    mientras (contador <= anios_restantes) {
+        imprimir "Anio " + contador + " de " + anios_restantes
+        contador = contador + 1
+    }
+}
+#fin del programa 
+
+
+#Funciones 
+
+funcion sumar(a, b) {
+    retornar a + b
+finfuncion
+
+# Ejemplo de uso CON impresión:
+b = 10
+a = 5
+var resultado_suma = sumar(b, a)
+imprimir "la suma es " + resultado_suma
+
+
+funcion restar(a, b){
+    retornar a - b
+finfuncion
+
+imprimir "la resta es igual a " + restar(5, 3)
+
+
+funcion saludo(){
+    imprimir "Hola Juan Chavez, por favor hace algo"
+finfuncion
+
+saludo()
